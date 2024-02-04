@@ -1,11 +1,14 @@
 #include <Arduino.h>
 #include <ESPWiFiConfig.h>
+#include <ESPRandom.h>
 
 
 void setup()
 {
     Serial.begin(115200);
-    wifi_setup();
+    String Password = String(ESPRandom::get());
+    Serial.println("AP= 'ESP-Test' Password='"+Password+"'");
+    wifi_setup_secret("ESP-Test",Password);
 }
 
 void loop()

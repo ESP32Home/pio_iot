@@ -4,6 +4,17 @@
 * enter password
 * the ESP will reboot, connect to the wifi and the app will continue
 
+dependencies graph
+```bash
+Dependency Graph
+|-- ESPRandom @ 1.5.0
+|-- ESPWiFiConfig @ 1.1.1+sha.66dee64
+|-- WiFi @ 2.0.0
+```
+
+
+run log
+
 ```bash
 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 configsip: 0, SPIWP:0xee
